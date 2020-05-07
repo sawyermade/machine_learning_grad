@@ -1,0 +1,64 @@
+Machine Learning Spring  2020 Project
+
+ 
+
+You will use the code in Canvas called cifar52020class.pyPreview the document on GAIVI for which you all have an account now (with passwords en route for those with a new account).  The dataset consists of 50,000 32x32 color training images, labeled over 10 categories, and 9,999 test images.
+
+This code pulls 5 animal classes from the cifar10 data set.  All but frog. Classes given below.  Also below is how to put the needed data in the right directory.   The code you are given provides an accuracy of around 77% as is.
+
+Note that on GPU’s with tensorflow and the same initialization you get different results (usually) for 2 runs.  Your project has 2 parts.  The first is make some change(s) to the code to improve performance and show over at least two runs averaged.  Nothing in the code is optimal so this should be easy enough to do.  You must explain what you changed, provide the results and explain why you believe it improved performance.
+
+This dataset has been used a lot and there are other implementations available on the internet.  It will be most beneficial to your learning to make your own changes and evaluate.  IF you simply must use other code you MUST carefully cite it and provide a working URL.  Failure to do so would be a form of academic dishonesty (read the syllabus for the outcome of choosing that route). 
+
+Your second task is to build the most accurate convolution only model you can.  This means remove the fully connected hidden layer.  That is the code that says flatten followed by a dense layer.  You will want to look at keras.io documentation to follow commands in the code provided that are relevant to performance.  Again, you must explain what you have done, why and why you think it helped.    This part of the project is competitive.  The most accurate model will get 3 points added to their final average of grades, second place 2 points, and third place 1 point.
+
+ 
+
+To connect to Gaivi use:  ssh username@gaivi.cse.usf.edu and you MUST use vpn to get there.  Editors are nano, vim,  and emacs. 
+
+You have to submit jobs to the GPU’s.  You are not allowed to go directly to them.  You may not need anaconda, but information is below.
+
+The command to submit to a GPU : qsub Train.shPreview the document
+
+The command to check status of the job: qstat
+
+To learn more on how to submit a job using SGE, please type the following to see
+
+the Sun Grid Engine Manual:
+
+         SGE_MANUAL
+
+To learn how to run Python code using Anaconda, please type the following
+
+to see the Anaconda and Anaconda Environments manual: ANACONDA_ENV_MANUAL
+
+ 
+
+The classes are:
+
+ 0 : airplane
+1 : automobile
+2 : bird
+3 : cat
+4 : deer
+5 : dog
+6 : frog
+7 : horse
+8 : ship
+9 : truck
+
+ 
+
+To get the data and get set up from your home directory on GAIVI:
+
+> mkdir .keras
+
+> cd .keras
+
+> cp /tmp/cifardata/keras.json .
+
+> mkdir datasets
+
+> cd datasets
+
+> cp /tmp/cifardata/cifar-10-batches-py.tar.gz .

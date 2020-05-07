@@ -1,0 +1,17 @@
+From the autoencoder that you built previously (4 inputs and 4 outputs), I want you to extract the features from the  hidden layer.  You can do this in several ways, I show one below.  Essentially, you must use that layer as your output layer.  Once you have the outputs of the  hidden layer for each example (where your hidden units < 4), you will use them as inputs to a new neural network.  That neural network will have the same outputs as the previous assignment, but will now be driven by the new features as its inputs for each example.  You will upload a file that shows the outputs, the code to generate the results with the compressed inputs and the raw results (close to 1 and 0) and you can also show rounded results.
+
+ 
+
+new_model= keras.Sequential() # Get hidden layer outputs.                                                                   new_model.add(keras.layers.Dense(3, input_dim=4, activation='tanh'))
+
+#set weights of the first layer. Previous model was called "model"                                                     new_model.set_weights(model.layers[0].get_weights())
+
+#compile it after setting the weights                                                                                                      
+
+new_model.compile(optimizer='adam', loss='mean_squared_error')                                                 #get output of the first dense layer                                                                                                        
+
+output = new_model.predict(X)
+
+print("Hidden Layer Output")
+
+print(output)

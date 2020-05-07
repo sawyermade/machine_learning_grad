@@ -1,0 +1,49 @@
+1. What does VC dimension tell you? 
+
+2. Is a higher or lower VC dimension better, why?
+
+3. Accuracy vs Bias vs Variance, how are they related?
+
+4. What does it mean for bias and variance when Accuracy is 100% on training data
+
+5. What about when Accuracy is at 99%?
+
+6. What can be infered if when training examples are changed you experiance a 5% difference in accuracy?
+
+7. What does PAC (probably approx correct) stand for and what does it tell you?
+
+8. Write out bayes rule in full for some P(C|A)
+
+9. What assumption is made for Naive Bayes? 
+
+10. Describe Naive Bayes and what it does?
+
+11. What is the Naive bayes discrimenant and what does it tell you?
+
+12. What is the purpose of using a log() for computing the discrimenant?
+
+13. Association rule learning, what is it made up of and how is support defined?
+
+14. Given a 2 class 2 action problem compute the risk.
+
+15. Describe linear regression.
+
+16. What is the difference between quadratic and linear regression?
+
+17. What is the quadratic disrimenant and what does it tell you?
+
+18. What makes computing the quadratic discrimenant difficult or impossible?
+
+19. Is PCA feature extraction or feature embedding?
+
+20. Describe PCA and how many components should be chosen?
+
+21. What is a covariance matrix.
+
+22. Where is the symmetry in a covariance matrix?
+
+23. What does a covariance of 0 tell you? How about a covariance of 1?
+
+24. What are version spaces? How to decide on which version space given a set of points?
+
+25. What is multi-dimensional scaling and what does it preserve?

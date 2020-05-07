@@ -1,0 +1,5 @@
+You are to compare Random Forests with 100 classifiers to JRIP on the Iris data to see if there is a statistically significant difference in accuracy.  The file below has the results from 10, 10 fold CV's and you are to use the corrected resampled T-test.
+
+If you do not remember the lecture on this topic,  please look at the file CorrectedResampledTtest.pdf under course files.
+
+Give us the value you calculate and whether the difference is significant for alpha=0.05.

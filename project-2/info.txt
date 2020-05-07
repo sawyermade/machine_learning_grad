@@ -1,0 +1,19 @@
+Install Tensorflow and Python 3 on your computer.  
+Then build an autoencoder (look at Keras - keras.io) to have 1 hidden layer (you figure out how many units) and to recreate the examples in the following table.  
+Upload your python file with the results in comments.  
+Provide comments we would need to understand anything non-standard and comments in general.
+
+0.97574425   0.023562217   0.00025743007   0.0004361684   
+0.01213217   0.9192687   0.034387283   0.034211848   
+0.00021202886   0.038327854   0.9614575   2.6346406e-06   
+0.0029690436   0.03507779   1.1339989e-06   0.961952
+
+0.97286904   0.012957465   0.00040823247   0.013765272   
+0.01247256   0.9720337   0.015380678   0.000113128175   
+0.00027056405   0.015018084   0.97109985   0.013611512   
+0.011029343   0.0001145607   0.016454708   0.9724014
+
+0.97453564   0.019326195   0.006103645   3.4452474e-05   
+0.012932166   0.9698748   0.00054492947   0.016648035   
+0.01297091   0.0014076282   0.97404206   0.011579408   
+3.068095e-05   0.016511245   0.010860036   0.972598
