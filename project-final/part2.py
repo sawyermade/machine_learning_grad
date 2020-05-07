@@ -526,7 +526,7 @@ def main():
 		for o, gt in zip(out_list, gt_list):
 			label, conf = o
 			fcn_test_str = f'{gt}: {label} @ {conf}%'
-			print(f'{gt}: {label} @ {conf}%')
+			print(fcn_test_str)
 			of.write(fcn_test_str + '\n')
 
 if __name__ == '__main__':
